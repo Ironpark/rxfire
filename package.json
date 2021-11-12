@@ -67,7 +67,7 @@
     "lint": "eslint -c .eslintrc.js '**/*.ts' --ignore-path './.gitignore'",
     "lint:fix": "eslint --fix -c .eslintrc.js '**/*.ts' --ignore-path './.gitignore'",
     "build": "run-s build:**",
-    "build:clean": "rmdir dist /s /q",
+    "build:clean": "if exist dist rmdir dist /q /s",
     "build:types": "tsc --emitDeclarationOnly",
     "build:rollup": "rollup -c",
     "build:docs": "cp README.md ./dist/ && cp -r ./docs ./dist/",
