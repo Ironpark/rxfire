@@ -70,7 +70,7 @@
     "build:clean": "if exist dist rmdir dist /q /s",
     "build:types": "tsc --emitDeclarationOnly",
     "build:rollup": "rollup -c",
-    "build:docs": "xcopy /f README.md ./dist/ && xcopy /f /e /i ./docs ./dist/",
+    "build:docs": "xcopy \"README.md\" \"./dist/\" /f /y && xcopy \"./docs\" \"./dist/\" /f /e /i /y",
     "dev": "rollup -c -w",
     "echo:chrome": "echo 'Open Chrome DevTools: \nchrome://inspect/#devices'",
     "test": "FIREBASE_CLI_PREVIEWS=storageemulator firebase emulators:exec \"jest --detectOpenHandles\" --project=rxfire-test-c497c ",
