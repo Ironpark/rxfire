@@ -2,6 +2,7 @@
   "name": "rxfire",
   "version": "6.0.1",
   "private": true,
+  "type":"module",
   "description": "Firebase JavaScript library RxJS",
   "author": "Firebase <firebase-support@google.com> (https://firebase.google.com/)",
   "license": "Apache-2.0",
