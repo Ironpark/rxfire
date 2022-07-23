@@ -1,5 +1,6 @@
 {
   "name": "rxfire/firestore",
+  "type":"module",
   "browser": "../dist/firestore/index.esm.js",
   "main": "../dist/firestore/index.cjs.js",
   "module": "../dist/firestore/index.esm.js",
