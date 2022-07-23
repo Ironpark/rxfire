@@ -1,3 +1,4 @@
+# TEST
 # RxFire
 
 Firebase and RxJS for all frameworks.
